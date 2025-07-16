@@ -66,7 +66,7 @@
       </div>
       <div class="bg-white text-gray-900 p-6 rounded shadow-lg">
         <h4 class="text-xl font-semibold mb-2">Célula Jovem</h4>
-        <p class="mb-1">📅 Sábado- 20h</p>
+        <p class="mb-1">📅 Sextas - 20h</p>
         <p class="mb-3">Um ambiente vibrante de comunhão, louvor e crescimento para jovens.</p>
         <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Participar</button>
       </div>
@@ -103,3 +103,4 @@
   </footer>
 </body>
 </html>
+
