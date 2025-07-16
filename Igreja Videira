@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eventos - Igreja Videira de Jussara</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Data do evento: 25 de julho de 2025 às 18h
+    const eventDate = new Date("2025-07-25T18:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Evento em andamento!";
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
 </head>
 <body class="bg-gradient-to-br from-purple-700 to-indigo-900 min-h-screen text-gray-100">
   <!-- Header -->
@@ -20,6 +43,9 @@
   <section class="text-center py-16 px-4 bg-cover bg-center" style="background-image: url('uva.jpg');">
     <h2 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">Eventos Especiais</h2>
     <p class="mt-4 text-lg md:text-xl text-white">Participe dos nossos próximos encontros e experiências com Deus</p>
+    <div class="mt-6 text-2xl font-semibold text-yellow-300">
+      Contagem regressiva para o evento: <span id="countdown"></span>
+    </div>
   </section>
 
   <!-- Seção de Eventos -->
@@ -40,7 +66,7 @@
       </div>
       <div class="bg-white text-gray-900 p-6 rounded shadow-lg">
         <h4 class="text-xl font-semibold mb-2">Célula Jovem</h4>
-        <p class="mb-1">📅 Sextas - 20h</p>
+        <p class="mb-1">📅 Sábado- 20h</p>
         <p class="mb-3">Um ambiente vibrante de comunhão, louvor e crescimento para jovens.</p>
         <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Participar</button>
       </div>
