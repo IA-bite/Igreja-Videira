@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Igreja Videira de Jussara</title>
+  <title>Eventos - Igreja Videira de Jussara</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-purple-100 to-indigo-200 min-h-screen text-gray-800">
+<body class="bg-gradient-to-br from-purple-700 to-indigo-900 min-h-screen text-gray-100">
   <!-- Header -->
-  <header class="bg-white shadow-md p-4 flex items-center justify-between">
+  <header class="bg-white shadow-md p-4 flex items-center justify-between text-gray-900">
     <div class="flex items-center space-x-4">
       <img src="logo.png" alt="Logo Igreja Videira" class="w-12 h-12" />
       <h1 class="text-xl font-bold">Igreja Videira de Jussara</h1>
@@ -18,33 +18,48 @@
 
   <!-- Hero Section -->
   <section class="text-center py-16 px-4 bg-cover bg-center" style="background-image: url('uva.jpg');">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">Uma família para pertencer</h2>
-    <p class="mt-4 text-lg md:text-xl text-white">Conexão com Deus e com pessoas que te levam para Deus</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">Eventos Especiais</h2>
+    <p class="mt-4 text-lg md:text-xl text-white">Participe dos nossos próximos encontros e experiências com Deus</p>
   </section>
 
-  <!-- Sobre a igreja -->
-  <section class="py-12 px-6 max-w-5xl mx-auto">
-    <h3 class="text-3xl font-bold text-center mb-6">Sobre Nós</h3>
-    <p class="text-lg leading-relaxed text-center">
-      Somos uma igreja em células, dedicada a transformar vidas através de relacionamentos profundos, ensinamentos cristãos e comunhão verdadeira. Junte-se a nós e faça parte dessa família.
-    </p>
+  <!-- Seção de Eventos -->
+  <section class="py-12 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10">Próximos Eventos</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white text-gray-900 p-6 rounded shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Culto da Família</h4>
+        <p class="mb-1">📅 Domingo - 18h</p>
+        <p class="mb-3">Celebre conosco momentos de adoração e palavra poderosa para sua casa.</p>
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Quero Participar</button>
+      </div>
+      <div class="bg-white text-gray-900 p-6 rounded shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Encontro com Deus</h4>
+        <p class="mb-1">📅 26 a 28 de Julho</p>
+        <p class="mb-3">Três dias intensos de cura, libertação e transformação espiritual.</p>
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Inscreva-se</button>
+      </div>
+      <div class="bg-white text-gray-900 p-6 rounded shadow-lg">
+        <h4 class="text-xl font-semibold mb-2">Célula Jovem</h4>
+        <p class="mb-1">📅 Sextas - 20h</p>
+        <p class="mb-3">Um ambiente vibrante de comunhão, louvor e crescimento para jovens.</p>
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Participar</button>
+      </div>
+    </div>
   </section>
 
-  <!-- Localização e contato -->
-  <section class="bg-white py-10 px-6 text-center">
-    <h3 class="text-2xl font-semibold mb-4">Onde Estamos</h3>
-    <p class="mb-2">Rua 3 de Julho, Q19 L01, Villa Nova - Jussara</p>
-    <p>📞 WhatsApp: <a href="https://wa.me/5562991173072" class="text-indigo-600 underline">(62) 99117-3072</a></p>
-  </section>
-
-  <!-- Formulário de contato -->
-  <section class="py-12 px-6 bg-indigo-50">
-    <h3 class="text-2xl font-bold text-center mb-6">Fale Conosco</h3>
+  <!-- Formulário de interesse -->
+  <section class="py-12 px-6 bg-indigo-100 text-gray-900">
+    <h3 class="text-2xl font-bold text-center mb-6">Deseja participar de um evento?</h3>
     <form class="max-w-xl mx-auto grid grid-cols-1 gap-4">
       <input type="text" placeholder="Seu nome" class="p-3 rounded border border-gray-300" required />
       <input type="email" placeholder="Seu e-mail" class="p-3 rounded border border-gray-300" required />
-      <textarea placeholder="Sua mensagem" class="p-3 rounded border border-gray-300" rows="4" required></textarea>
-      <button type="submit" class="bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700">Enviar Mensagem</button>
+      <select class="p-3 rounded border border-gray-300" required>
+        <option selected disabled>Selecione o evento</option>
+        <option>Culto da Família</option>
+        <option>Encontro com Deus</option>
+        <option>Célula Jovem</option>
+      </select>
+      <button type="submit" class="bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700">Confirmar Participação</button>
     </form>
   </section>
 
@@ -57,7 +72,7 @@
   </a>
 
   <!-- Rodapé -->
-  <footer class="bg-gray-100 text-center text-sm py-4 mt-10">
+  <footer class="bg-gray-100 text-center text-sm text-gray-900 py-4 mt-10">
     © 2025 Igreja Videira de Jussara. Todos os direitos reservados.
   </footer>
 </body>
