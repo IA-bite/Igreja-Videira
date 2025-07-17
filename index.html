@@ -3,58 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Igreja Videira de Jussara - Evento Especial</title>
+  <title>Igreja Videira de Jussara</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-purple-900 text-white min-h-screen">
-  <!-- Hero / Landing Top -->
-  <section class="text-center py-20 px-4 bg-purple-800">
-    <h1 class="text-5xl font-extrabold mb-4">Igreja Videira de Jussara</h1>
-    <p class="text-xl font-medium mb-6">Uma família para pertencer</p>
-    <p class="text-lg max-w-2xl mx-auto">Conexão com Deus e com pessoas que te levam para Ele. Viva uma experiência transformadora com a gente!</p>
-    <div class="mt-8">
-      <a href="https://wa.me/5562991173072" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg">Fale Conosco no WhatsApp</a>
-    </div>
+
+  <!-- Header -->
+  <header class="bg-purple-950 p-5 flex justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold">Igreja Videira de Jussara</h1>
+    <a href="https://www.instagram.com/igrejavideiradejussara" target="_blank" class="bg-pink-500 px-4 py-2 rounded hover:bg-pink-600">
+      Instagram
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6">
+    <h2 class="text-4xl font-extrabold mb-4">Uma família para pertencer</h2>
+    <p class="text-lg max-w-2xl mx-auto">Conexão com Deus e pessoas que te levam para Deus. Descubra seu propósito em Cristo conosco.</p>
+  </section>
+
+  <!-- Sobre -->
+  <section class="py-12 px-6 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-4">Sobre Nós</h3>
+    <p class="text-lg text-gray-200">
+      Somos uma igreja em células localizada em Jussara-GO, comprometida com a transformação de vidas por meio da Palavra de Deus e do discipulado.
+    </p>
   </section>
 
   <!-- Eventos -->
-  <section class="py-16 px-6 bg-purple-700">
-    <h2 class="text-3xl font-bold text-center mb-10">Próximos Eventos</h2>
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-      <div class="bg-purple-600 p-6 rounded-lg shadow">
-        <h3 class="text-xl font-bold mb-2">Culto de Celebração</h3>
-        <p>Todos os domingos às 19h. Adoração, Palavra e Comunhão!</p>
-      </div>
-      <div class="bg-purple-600 p-6 rounded-lg shadow">
-        <h3 class="text-xl font-bold mb-2">Células Durante a Semana</h3>
-        <p>Encontros em casas para crescimento espiritual e discipulado.</p>
-      </div>
-    </div>
-  </section>
+  <section class="py-12 px-6 bg-purple-800">
+    <h3 class="text-3xl font-bold text-center mb-10">Eventos</h3>
 
-  <!-- Localização -->
-  <section class="py-12 px-6 text-center">
-    <h2 class="text-2xl font-semibold mb-4">Onde Estamos</h2>
-    <p class="text-lg">📍 Rua 3 de Julho, Q19 L01, Villa Nova - Jussara</p>
+    <div class="max-w-4xl mx-auto grid gap-6">
+
+      <!-- Culto -->
+      <div class="bg-purple-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">Culto de Domingo</h4>
+        <p>Todos os domingos às 19:00</p>
+      </div>
+
+      <!-- Células -->
+      <div class="bg-purple-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">Células</h4>
+        <p>Durante a semana em diversos lares</p>
+      </div>
+
+      <!-- Encontro com Deus -->
+      <div class="bg-purple-900 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold mb-2">Encontro com Deus</h4>
+        <p class="mb-2">🗓️ 10, 11 e 12 de Outubro</p>
+        <p class="italic mb-4">"Venha, sua vida nunca mais será a mesma."</p>
+        <p class="text-sm text-gray-300 mb-4">
+          <strong>Versículo:</strong> "Àquele lugar chamou Jacó Peniel, pois disse: Vi a Deus face a face, e a minha vida foi salva." – Gênesis 32:30
+        </p>
+        <!-- Vídeo incorporado -->
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full rounded-lg" src="https://www.youtube.com/embed/PAWbzD-4SNo" title="Encontro com Deus" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- Formulário de Contato -->
-  <section class="bg-white text-black py-16 px-6">
-    <h2 class="text-2xl font-bold text-center mb-6">Entre em Contato</h2>
-    <form class="max-w-xl mx-auto grid gap-4">
-      <input type="text" placeholder="Seu nome" class="p-3 border rounded" required>
-      <input type="email" placeholder="Seu e-mail" class="p-3 border rounded" required>
-      <textarea placeholder="Sua mensagem" class="p-3 border rounded" rows="4" required></textarea>
-      <button type="submit" class="bg-purple-800 text-white py-3 rounded hover:bg-purple-900">Enviar</button>
+  <section class="py-12 px-6 bg-white text-black">
+    <h3 class="text-3xl font-bold text-center mb-6">Fale Conosco</h3>
+    <form class="max-w-xl mx-auto grid grid-cols-1 gap-4">
+      <input type="text" placeholder="Seu nome" class="p-3 rounded border border-gray-300" required />
+      <input type="email" placeholder="Seu e-mail" class="p-3 rounded border border-gray-300" required />
+      <textarea placeholder="Sua mensagem" class="p-3 rounded border border-gray-300" rows="4" required></textarea>
+      <button type="submit" class="bg-purple-900 text-white py-3 rounded hover:bg-purple-800">Enviar Mensagem</button>
     </form>
   </section>
 
-  <!-- Instagram e Rodapé -->
-  <footer class="bg-purple-800 text-center text-sm text-purple-200 py-6">
-    <div class="mb-2">
-      <a href="https://www.instagram.com/igrejavideiradejussara?igsh=aWpjanhsZTI4NWQ2&utm_source=qr" target="_blank" class="text-pink-300 hover:underline">Siga no Instagram</a>
-    </div>
-    <p>© 2025 Igreja Videira de Jussara. Todos os direitos reservados.</p>
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5562991173072" target="_blank"
+     class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 flex items-center space-x-2 z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10a9 9 0 1115.09 6.32l3.47 3.48-1.42 1.41-3.48-3.47A9 9 0 013 10z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-purple-950 text-center text-sm text-gray-300 py-6 mt-10">
+    Endereço: Rua 3 de Julho, Q19 L01, Villa Nova - Jussara<br/>
+    © 2025 Igreja Videira de Jussara. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
